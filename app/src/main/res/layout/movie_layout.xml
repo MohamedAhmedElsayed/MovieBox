@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="200dp"
+    android:layout_margin="3dp"
+    android:elevation="2dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/MoveImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/MovieImageDesc"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha=".75"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical"
+
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/MovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            tools:text="@string/MovieName"/>
+
+        <TextView
+            android:id="@+id/MovieRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableEnd="@drawable/ic_stars_white_18dp"
+            android:drawableRight="@drawable/ic_stars_white_18dp"
+            android:textColor="@android:color/white"
+            tools:text="@string/MovieRate"
+            />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="sohage.example.com.movie.Activity.DetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/YouTubeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp">
+            </com.google.android.youtube.player.YouTubePlayerView>
+
+            <Button
+                android:id="@+id/PlayVideoBut"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/play"
+                />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/MoveDetailsMargin"
+            android:layout_marginTop="@dimen/MoveDetailsMargin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/DMovieImage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:contentDescription="@string/MovieImageDesc"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/DMovieTitle"
+                    style="@style/Headers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic|bold"
+                    tools:text="Movie Title"/>
+
+                <TextView
+                    android:id="@+id/DMovieRDate"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Movie Release Date"/>
+
+
+                <TextView
+                    android:id="@+id/DMovieRate"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Movie Rate"/>
+
+
+                <TextView
+                    android:id="@+id/Drevenue"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Budget"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            style="@style/Headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Overview"/>
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/DMovieOverview"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:colorClickableText="@color/primary_dark"
+            tools:text="Overview"
+            />
+
+        <View
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/Genres"
+            style="@style/Headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/genres"
+            />
+
+        <TextView
+            android:id="@+id/DMovieGenres"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            style="@style/Headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Languages"/>
+
+        <TextView
+            android:id="@+id/DLanguage"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            style="@style/Headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Companies"/>
+
+        <TextView
+            android:id="@+id/DProduction_companies"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            style="@style/Headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Review"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ReviewRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+
+            style="@style/Headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/similar"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/SimilarMovieRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+   

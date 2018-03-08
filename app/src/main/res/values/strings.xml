@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movie Box</string>
+    <string name="similar">Similar Movies</string>
+    <string name="MovieImageDesc" translatable="false">Movie Image</string>
+    <string name="Overview">Overview</string>
+    <string name="Languages">Languages</string>
+    <string name="Companies">Companies</string>
+    <string name="POPULAR">POPULAR</string>
+    <string name="RATED">TOP RATED</string>
+    <string name="UPCOMING">UPCOMING</string>
+    <string name="MovieRate" translatable="false">MovieRate</string>
+    <string name="MovieName" translatable="false">Movie Name</string>
+    <string name="Review">Reviews</string>
+    <string name="genres">Genres</string>
+    <string name="userIcon" translatable="false">User Icon</string>
+    <string name="NoConnection">No Internet Connection</string>
+    <string name="PlayVideoError">Playing Video Error</string>
+    <string name="EmptyList">No Matched Result</string>
+</resources>

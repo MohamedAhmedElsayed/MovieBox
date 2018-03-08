@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">صندوق الافلام</string>
+    <string name="genres">انواع</string>
+    <string name="UPCOMING">القادم</string>
+    <string name="Review">التعليقات</string>
+    <string name="RATED">"الاعلى تقييم "</string>
+    <string name="POPULAR">المفضله</string>
+    <string name="Overview">تلخيص</string>
+    <string name="Companies">شركات</string>
+    <string name="Languages">"اللغه "</string>
+    <string name="similar">الافلام المشابهه</string>
+    <string name="NoConnection">"تحقق من اتصاللك بالانترنت ! "</string>
+    <string name="PlayVideoError">خطا اثناء تحميل الفيديوا</string>
+    <string name="EmptyList">لا توجد نتائج!</string>
+</resources>
